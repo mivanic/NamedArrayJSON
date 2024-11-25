@@ -1,5 +1,5 @@
 module NamedArrayJSON
-
+using JSON
 export readJSON, writeJSON
 
 function writeJSON(data, filename)
