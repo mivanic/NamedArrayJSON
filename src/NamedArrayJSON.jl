@@ -54,6 +54,8 @@ function readJSON(filename)
             dataout = merge(dataout, Dict(Symbol(k) => datain[k]["data"]))
         end
     end
+
+    return dataout
 end
 
 
