@@ -3,7 +3,11 @@ uuid = "10f5fd67-8771-4a5e-8bc2-4336bcf4d577"
 authors = ["Maros Ivanic"]
 version = "1.0.0-DEV"
 
+[deps]
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+
 [compat]
+JSON = "0.21.4"
 julia = "1.6.7"
 
 [extras]
