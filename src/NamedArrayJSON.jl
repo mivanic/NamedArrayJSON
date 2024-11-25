@@ -47,7 +47,6 @@ function readJSON(filename)
             if length(datain[k]["sets"]) == 1
                 dataout = merge(dataout, Dict(Symbol(k) => NamedArray(reshape(convert(Vector{Float64}, datain[k]["data"]), map(length, datain[k]["sets"])...), datain[k]["sets"][1])))
             else
-                println(k)
                 dataout = merge(dataout, Dict(Symbol(k) => NamedArray(reshape(convert(Vector{Float64}, datain[k]["data"]), map(length, datain[k]["sets"])...), datain[k]["sets"])))
             end
         else
