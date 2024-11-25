@@ -7,7 +7,7 @@ function writeJSON(data, filename)
     # Create a new dictionary where data and set names are separate
     data_out = Dict()
     for k ∈ keys(data)
-        if size(data[k]) == ()
+        if size(data[k]) == () || data[k] isa Vector{String}
             data_out = merge(data_out, Dict(
                 k => Dict(
                     "data" => data[k]
